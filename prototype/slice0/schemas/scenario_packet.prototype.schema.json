@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/cadence-professional/slice0/scenario_packet.prototype.schema.json",
+  "title": "Cadence Professional Slice 0 Scenario Packet",
+  "description": "Prototype-only evidence envelope. This is not a canonical Cadence schema.",
+  "type": "object",
+  "required": ["schema_version", "kind", "payload"],
+  "properties": {
+    "schema_version": {
+      "const": "prototype.slice0.v0"
+    },
+    "kind": {
+      "enum": [
+        "baseline",
+        "scenario",
+        "held_scenario",
+        "authorization",
+        "revalidation",
+        "applied_revision"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

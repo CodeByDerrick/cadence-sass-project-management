@@ -1,0 +1,120 @@
+{
+  "organization_id": "synthetic-org",
+  "workspace_id": "synthetic-professional-workspace",
+  "revision_id": "portfolio-r1",
+  "horizon_days": 8,
+  "overtime_multiplier": 1.5,
+  "baseline_project_order": [
+    "project-y",
+    "project-z",
+    "project-x"
+  ],
+  "staff": [
+    {
+      "id": "jill",
+      "name": "Jill",
+      "capabilities": ["assembly", "field"],
+      "pto_days": [1, 2],
+      "hourly_rate": 40
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "capabilities": ["analysis", "validation"],
+      "pto_days": [],
+      "hourly_rate": 50
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "capabilities": ["assembly", "documentation"],
+      "pto_days": [],
+      "hourly_rate": 35
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-x",
+      "name": "Project X",
+      "priority": 2,
+      "deadline_minute": 10620,
+      "task_ids": ["x-1", "x-2", "x-3"]
+    },
+    {
+      "id": "project-y",
+      "name": "Project Y",
+      "priority": 1,
+      "deadline_minute": 3900,
+      "task_ids": ["y-1", "y-2"]
+    },
+    {
+      "id": "project-z",
+      "name": "Project Z",
+      "priority": 3,
+      "deadline_minute": 8220,
+      "task_ids": ["z-1"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "x-1",
+      "project_id": "project-x",
+      "name": "Project X analysis",
+      "required_capability": "analysis",
+      "effort_minutes": 480,
+      "dependencies": [],
+      "eligible_staff_ids": ["sam"],
+      "preferred_staff_id": "sam"
+    },
+    {
+      "id": "x-2",
+      "project_id": "project-x",
+      "name": "Project X assembly",
+      "required_capability": "assembly",
+      "effort_minutes": 900,
+      "dependencies": ["x-1"],
+      "eligible_staff_ids": ["jill", "alex"],
+      "preferred_staff_id": "jill"
+    },
+    {
+      "id": "x-3",
+      "project_id": "project-x",
+      "name": "Project X validation",
+      "required_capability": "validation",
+      "effort_minutes": 480,
+      "dependencies": ["x-2"],
+      "eligible_staff_ids": ["sam"],
+      "preferred_staff_id": "sam"
+    },
+    {
+      "id": "y-1",
+      "project_id": "project-y",
+      "name": "Project Y analysis",
+      "required_capability": "analysis",
+      "effort_minutes": 480,
+      "dependencies": [],
+      "eligible_staff_ids": ["sam"],
+      "preferred_staff_id": "sam"
+    },
+    {
+      "id": "y-2",
+      "project_id": "project-y",
+      "name": "Project Y validation",
+      "required_capability": "validation",
+      "effort_minutes": 480,
+      "dependencies": ["y-1"],
+      "eligible_staff_ids": ["sam"],
+      "preferred_staff_id": "sam"
+    },
+    {
+      "id": "z-1",
+      "project_id": "project-z",
+      "name": "Project Z assembly",
+      "required_capability": "assembly",
+      "effort_minutes": 1920,
+      "dependencies": [],
+      "eligible_staff_ids": ["alex"],
+      "preferred_staff_id": "alex"
+    }
+  ]
+}
