@@ -16,8 +16,9 @@ Read in this order:
 6. [`docs/origin/project_manager_expedition_scenario.md`](docs/origin/project_manager_expedition_scenario.md) — Project X origin evidence.
 7. [`docs/product/expedition_orchestration_product_synthesis.md`](docs/product/expedition_orchestration_product_synthesis.md) — professional product interpretation.
 8. [`docs/architecture/expedition_simulation_system_shape.md`](docs/architecture/expedition_simulation_system_shape.md) — provisional trust and execution architecture.
-9. [`tools/automation/briefs/active/slice_0_professional_orchestration_proof.md`](tools/automation/briefs/active/slice_0_professional_orchestration_proof.md) — authorized Slice 0 scope.
-10. [`prototype/slice0/README.md`](prototype/slice0/README.md) — executable prototype commands and proof boundary.
+9. [`tools/automation/briefs/archive/slice_0_professional_orchestration_proof.md`](tools/automation/briefs/archive/slice_0_professional_orchestration_proof.md) — accepted and merged Slice 0 scope.
+10. [`tools/automation/briefs/next_slice_proposal.md`](tools/automation/briefs/next_slice_proposal.md) — proposal-only Slice 1 gate; not implementation authority.
+11. [`prototype/slice0/README.md`](prototype/slice0/README.md) — executable prototype commands and proof boundary.
 
 ## Product relationship
 
@@ -120,7 +121,7 @@ No claim that these behaviors are implemented is made here.
 ## Foundational product posture
 
 - **Simulation before mutation.** Proposed changes must not silently alter operational truth.
-- **Human authorization before consequential execution.** Recommendation, preference, approval, authorization, and execution remain distinct.
+- **Human authorization before consequential execution.** Recommendation, preference, review, approval, authorization, and execution remain distinct.
 - **Constraint-aware planning.** Eligibility, dependencies, PTO, deadlines, overtime, costs, policy, and competing priorities are first-class professional inputs.
 - **Progressive governance.** Use the smallest sufficient control surface and add stronger machinery only when consequence requires it.
 - **Recognition without exploitation.** Worker evidence should surface hidden labor and overload rather than justify unsupported extraction.
@@ -129,7 +130,7 @@ No claim that these behaviors are implemented is made here.
 
 ## Current executable proof
 
-Slice 0 is a headless Python proof of:
+Slice 0 is an accepted and merged headless Python proof of:
 
 ```text
 Observe -> Simulate -> Explain -> Negotiate Constraints
@@ -148,6 +149,23 @@ python -m cadence_professional_slice0 --fixtures fixtures --output evidence
 
 The prototype does not establish a canonical Cadence schema or production scheduling, identity, permission, labor, privacy, or execution semantics.
 
+## Current proposal gate
+
+Slice 1 is proposal-only and would add a bounded human review boundary:
+
+```text
+Hold
+  -> Review
+       -> Reject
+       -> Request Bounded Change -> Superseding Scenario Version
+       -> Approve For Authorization
+  -> Authorize Exact Reviewed Version
+  -> Revalidate
+  -> Apply
+```
+
+No Slice 1 code is authorized until the operator explicitly promotes `tools/automation/briefs/next_slice_proposal.md` into one active brief.
+
 ## Lens relationship
 
 Professional projections may include portfolio, focused-project, staff-lane, dependency, gap-explanation, baseline-versus-scenario, cost-impact, deadline-risk, approval, lightweight-project, role-shape, and closeout views.
@@ -162,7 +180,7 @@ Lessons may flow between this repository and `Calendar`, but visual projections 
 - `docs/reconciliation/` — durable cross-repository alignment records.
 - `docs/implementation/` — bounded implementation findings and evidence interpretation.
 - `prototype/` — isolated executable professional prototypes.
-- `tools/automation/` — minimal brief and completion discipline for bounded execution.
+- `tools/automation/` — minimal proposal, brief, archive, and completion discipline for bounded execution.
 - `.github/workflows/` — objective validation that has earned automation.
 
 This repository should prefer pointers to shared Strategy or Dev authority over copied doctrine or implementation truth.
@@ -171,7 +189,7 @@ This repository should prefer pointers to shared Strategy or Dev authority over 
 
 The first scenario describes a project manager expediting Project X through portfolio-wide simulation, explicit task eligibility, PTO, overtime, cost, deadline and displacement analysis, a held strategy, human authorization, baseline revalidation, and bounded application.
 
-Additional active product pressures include low-ceremony temporary groups and explainable emergent-role or portable-worker evidence. Those pressures are not part of Slice 0.
+The next proposal focuses only on human review, rejection, and bounded scenario supersession. Other active product pressures—including low-ceremony temporary groups and explainable emergent-role or portable-worker evidence—remain deferred from the executable path.
 
 ## Status and non-claims
 

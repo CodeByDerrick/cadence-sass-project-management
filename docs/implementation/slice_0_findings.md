@@ -1,7 +1,7 @@
 # Slice 0 Implementation Findings
 
 **Date:** 2026-07-16  
-**Status:** implementation evidence complete; awaiting operator review  
+**Status:** accepted and merged through PR #3  
 **Evidence source:** `prototype/slice0/` code, tests, fixtures, and committed evidence snapshots
 
 ## Objective
@@ -12,6 +12,7 @@ Test whether the existing professional architecture is concrete enough to suppor
 
 ```text
 SLICE_0_PROOF_IMPLEMENTED
+SLICE_0_ACCEPTED_AND_MERGED
 7_TESTS_PASS
 7_DETERMINISTIC_EVIDENCE_SNAPSHOTS_GENERATED
 BASELINE_SCENARIO_AUTHORIZATION_AND_APPLIED_STATE_SEPARATED
@@ -71,7 +72,8 @@ The repository now has:
 
 - a concise `AGENTS.md` map;
 - `CURRENT_STATE.md` for re-entry;
-- one active brief;
+- an accepted Slice 0 brief in archive;
+- a proposal-only next-slice surface;
 - a brief template and completion checklist;
 - deterministic CI.
 
@@ -94,14 +96,20 @@ This implementation does not prove:
 
 ## Pressure revealed by implementation
 
-The most valuable next pressure is not broader scheduling sophistication. It is deciding which boundary should receive the next executable evidence:
+The next executable boundary should be selected from:
 
 1. **Review and rejection pressure:** human review modifies or rejects a proposed change before authorization.
 2. **Authorization-scope pressure:** multiple approvers own different consequences and partial authority must not combine accidentally.
 3. **Staleness pressure:** classify a narrowly defined non-material baseline change without silently rebasing the approved change set.
 4. **Representative lens packet:** emit a stable, explicitly non-canonical packet for `Calendar` to render.
 
-Only one of these should become Slice 1.
+Exactly one should be active at a time.
+
+The proposal-only selection is now review and rejection pressure:
+
+- `tools/automation/briefs/next_slice_proposal.md`
+
+This selection is not implementation authorization.
 
 ## Cross-repository reconciliation read
 
@@ -119,6 +127,6 @@ A reconciliation trigger should be reconsidered when:
 - `Calendar` needs a representative professional packet;
 - implementation evidence materially changes a named Strategy claim.
 
-## Next operator gate
+## Current operator gate
 
-Review and merge Slice 0, then select exactly one implementation pressure for Slice 1. Do not activate several in parallel and do not return to broad product scaffolding unless the implementation reveals a specific safety or testability gap.
+Review `tools/automation/briefs/next_slice_proposal.md` and explicitly authorize, revise, keep, or reject the proposed Slice 1. No product-code implementation is authorized while the active brief directory is empty.
