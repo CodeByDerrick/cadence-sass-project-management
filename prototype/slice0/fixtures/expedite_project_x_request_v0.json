@@ -1,0 +1,7 @@
+{
+  "request_id": "request-expedite-project-x",
+  "requested_by": "synthetic-project-manager",
+  "target_project_id": "project-x",
+  "objective": "earliest feasible completion with visible portfolio consequences",
+  "preserve_hard_constraints": true
+}
